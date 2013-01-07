@@ -1,4 +1,4 @@
-lorem_ipsum
+Lorem Ipsum Generator Shell Script
 ===========
 
 A basic shell script to generate Lorem Ipsum text.
