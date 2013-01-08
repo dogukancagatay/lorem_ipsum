@@ -25,7 +25,7 @@ if [ $# -eq 2 ] || [ $# -eq 3 ]; then
         LIPSUM=${RAW_LIPSUM#*<lipsum>}
         #delete after lipsum
         LIPSUM=${LIPSUM%</lipsum>*}
-        echo $LIPSUM
+        echo "$LIPSUM"
         exit 0
     fi
 fi
