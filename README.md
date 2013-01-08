@@ -12,7 +12,7 @@ For installation clone the repo into a directory:
 Running:
 
 ```
-    cd lorem_ipsum
+    cd lorem_ipsum/
     ./lorem_ipsum.sh -p 3       # Generates 3 paragraphs
     ./lorem_ipsum.sh -w 30      # Generates 30 words
     ./lorem_ipsum.sh -b 60      # Generates 60 bytes
