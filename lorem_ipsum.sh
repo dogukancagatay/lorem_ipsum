@@ -28,5 +28,29 @@ if [ $# -eq 2 ] || [ $# -eq 3 ]; then
         echo "$LIPSUM"
         exit 0
     fi
+else
+    echo 'Usage: lorem_ipsum [-w|-p|-b] N [-n M]'
+    echo '  where'
+    echo '  N is an integer indicating the number of words/paragraphs/bytes'
+    echo '  M can be yes or no which indicates whether the generated word/paragraph/byte starts with "Lorem ipsum ..." It is optional and default value is yes.'
+    echo '  '
+    echo 'Examples:'
+    echo 'lorem_ipsum -p 3'
+    echo 'Generates 3 paragraphs of lorem ipsum.'
+    echo '  '
+    echo 'lorem_ipsum -p 3 -n no'
+    echo 'Generates 3 paragraphs of lorem ipsum which doesnt start with "Lorem ipsum ..."'
+    echo '  '
+    echo 'lorem_ipsum -w 10'
+    echo 'Generates 10 words of lorem ipsum.'
+    echo '  '
+    echo 'lorem_ipsum -b 64'
+    echo 'Generates 64 bytes of lorem ipsum.'
+    echo '  '
+    echo 'Credits:'
+    echo 'The lorem_ipsum script is written by Dogukan Cagatay (http://github.com/dogukancagatay)'
+    echo 'The Lorem Ipsum extract taken from http://www.lipsum.com/ courtesy of James Wilson'
+
 fi
+
 
